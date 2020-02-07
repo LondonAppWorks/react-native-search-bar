@@ -103,7 +103,7 @@ RCT_CUSTOM_VIEW_PROPERTY(textFieldBackgroundColor, UIColor, RNSearchBar)
         
         // Add a clip before drawing anything, in the shape of an rounded rect
         [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0,0, 34, 34)
-                                    cornerRadius:5.0] addClip];
+                                    cornerRadius:10.0] addClip];
         [[RCTConvert UIColor:json]  setFill];
         
         UIRectFill(CGRectMake(0, 0, size.width, size.height));
